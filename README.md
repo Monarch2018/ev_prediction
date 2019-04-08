@@ -1,3 +1,7 @@
+This repository was originally forked from the **[Beautiful Jekyll](https://github.com/daattali/beautiful-jekyll)** theme, by Dean Attali.  The README for the Beautiful Jekyll theme follows below:
+
+***
+
 # Beautiful Jekyll
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/daattali/20)
