@@ -9,8 +9,8 @@
 
 # If you are building a GitHub project page then use these settings:
 # Replace with your project's URL!
-url: "http://kerchner.github.io/myds-project"
-baseurl: "/myds-project"
+url: "http://kerchner.github.io/beautiful-project"
+baseurl: "/beautiful-project"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
