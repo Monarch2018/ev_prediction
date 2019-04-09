@@ -25,6 +25,6 @@ What if I just paste the HTML for a plotly plot?
 
 We can do it with a line of markdown that looks like this:
 ```
-{% include jupyter-basic_bar.html %}
+\{\% include jupyter-basic_bar.html \%\}
 ```
 {% include jupyter-basic_bar.html %}
