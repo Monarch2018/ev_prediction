@@ -22,6 +22,7 @@ body {
 ul#menu li {
 	float: left;
 	list-style: none;
+	margin-top: 5px;
 }
 
 ul#menu li a {
@@ -54,7 +55,7 @@ ul#menu li a:hover {
 #main {
 	background: url(menubar.jpg);
 	width: 850px;
-	margin-left: -60px;
+	margin-left: -50px;
 	position: center;
 }
 
