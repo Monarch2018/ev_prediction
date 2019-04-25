@@ -11,42 +11,54 @@ body {
   background: #FFF;
 }
 
-nav ul {
-    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    padding: 30px;
-    list-style: none;
-    font-weight: bold;
+#menubar {
+	height: 35px;
+	position: relative;
+	z-index: 1;
 }
-nav ul li {
-    display: inline;
+
+ul#menu {
+	
+	margin: 0;
+}
+
+ul#menu li {
+    float: left;
+	margin:5px 0 0 0;
+	padding: 0 0 0 6px;
+	list-style: none;
 }
 
 ul#menu li a {
 	letter-spacing: 0em;
-	font: normal 100% arial, sans-serif;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	text-transform: uppercase;
 	display: block;
 	height: 20px;
 	text-decoration: none;
+	padding: 9px 22px 5px 16px;
 	text-align: center;
 	color: #fff;
 	border: 0;
 }
 
-* {margin: 0.1px;
-   padding: 0.1px;}
-
-.container {
-    padding-top: 10px;
-    margin: auto;
+ul#menu li.selected a {
+	height: 30px;
+	color: #111;
+	padding: 7px 22px 5px 16px;
 }
 
-.blurb {
-    background-color: #ffffff;
+ul#menu li.selected {
+	margin: 7px 0 0 0;
+	background: #f8f8f8;
 }
 
-#menubar {
-    background: url(background.jpg) repeat-x;
+ul#menu li a:hover {
+	color: #888;
+}
+
+#main {
+	background: url(background.jpg);
 }
 
 
