@@ -30,8 +30,9 @@ ul#menu li {
 
 ul#menu li a {
 	letter-spacing: 0em;
-	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
+	padding: 9px 22px 5px 16px;
 	display: block;
 	height: 20px;
 	text-decoration: none;
@@ -43,11 +44,10 @@ ul#menu li a {
 ul#menu li.selected a {
 	height: 30px;
 	color: #111;
-	padding: 7px 22px 5px 16px;
+	padding: 9px 22px 5px 16px;
 }
 
 ul#menu li.selected {
-	margin: 7px 0 0 0;
 	background: #f8f8f8;
 }
 
