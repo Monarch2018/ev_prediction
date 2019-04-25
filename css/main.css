@@ -18,10 +18,6 @@ body {
 	z-index: 1;
 }
 
-ul#menu {
-	
-	margin: 0;
-}
 
 ul#menu li {
 	float: left;
