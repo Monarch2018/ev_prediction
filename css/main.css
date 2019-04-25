@@ -38,7 +38,6 @@ ul#menu li a {
 ul#menu li.selected a {
 	height: 30px;
 	color: #111;
-	padding: 7px 22px 5px 16px;
 }
 
 ul#menu li.selected {
