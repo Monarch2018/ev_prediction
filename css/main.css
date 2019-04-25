@@ -13,8 +13,9 @@ body {
 }
 
 #menubar {
-	height: 60px;
+	height: 40px;
 	position: relative;
+	float: left;
 	z-index: 1;
 }
 
