@@ -23,7 +23,7 @@ ul#menu {
 }
 
 ul#menu li {
-	float: center;
+	float: left;
 	list-style: none;
 }
 
