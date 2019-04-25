@@ -10,14 +10,6 @@ body {
   background: #FFF;
 }
 
-#menubar {
-	width: 0px;
-	height: 0px;
-	padding: 0 0 0 0;
-	position: relative;
-	z-index: 1;
-}
-
 ul#menu {
 	
 	margin: 0;
@@ -58,10 +50,9 @@ ul#menu li a:hover {
 	color: #888;
 }
 
-#main {
-	
-	padding: 0 0 0 0;
-	background: url(background.jpg);
+
+#menubar {
+    background: url(image1.jpg) repeat-x;
 }
 
 p {
