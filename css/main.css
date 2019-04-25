@@ -52,7 +52,7 @@ ul#menu li.selected {
 ul#menu li a:hover {
 	color: #888;
 }
-
+/* 
 #main {
 	background: url(menubar.jpg);
 /* 	width: 850px; */
@@ -61,7 +61,7 @@ ul#menu li a:hover {
 	margin-left: -40px;
 	padding: 30px;
 	position: center;
-}
+} */
 
 
 p {
