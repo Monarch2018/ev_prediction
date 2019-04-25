@@ -7,7 +7,7 @@ body {
   font: normal .78em arial, sans-serif;
   font-size: 18px;
   color: #404040;
-  width: 200%;
+  width: 100%;
   position: relative;
   background: #FFF;
 }
@@ -54,9 +54,11 @@ ul#menu li a:hover {
 
 #main {
 	background: url(menubar.jpg);
-	width: 850px;
-	margin-top: -50px;
+/* 	width: 850px; */
+	width: 100%;
+	margin-top: -40px;
 	margin-left: -50px;
+	padding: 30px;
 	position: center;
 }
 
