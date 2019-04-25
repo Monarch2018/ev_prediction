@@ -54,7 +54,7 @@ ul#menu li a:hover {
 #main {
 	background: url(menubar.jpg);
 	width: 850px;
-	width: 200%;
+/* 	width: 100%; */
 	margin-top: -30px;
 	margin-left: -40px;
 	padding: 30px;
