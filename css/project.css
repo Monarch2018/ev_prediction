@@ -1,6 +1,6 @@
 body {
     background-color: #f0f8ff; 
-    margin: auto;
+    margin: 0px;
     width: 100%;
 }
 nav ul {
@@ -65,7 +65,7 @@ p {
     color: #000000;
 }
 footer a{
-    border-top: 3px solid #d5d5d5;
+    border-top: 0px solid #d5d5d5;
     font-size: 1.0em;
     font-family: "Comic Sans MS", cursive, sans-serif;
     color: #000000;
