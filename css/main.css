@@ -3,16 +3,12 @@
 /* --- General --- */
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
+/*   font-family: 'Lora', 'Times New Roman', serif; */
+  font: normal .78em arial, sans-serif;
   font-size: 18px;
   color: #404040;
   position: relative;
   background: #FFF;
-}
-
-ul#menu {
-	
-	margin: 0;
 }
 
 ul#menu li {
