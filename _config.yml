@@ -9,8 +9,8 @@
 
 # If you are building a GitHub project page then use these settings:
 # Replace with your project's URL!
-url: "http://monarch2018.github.io/"
-baseurl: "/beautiful-project"
+url: "http://monarch2018.github.io/electrivehicleprediction"
+baseurl: "/electrivehicleprediction"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
