@@ -5,7 +5,7 @@ subtitle: Electric Vehicle Presence Discovery
 bigimg: /img/tesla.png
 ---
 
-<div class="main-explain-area jumbotron">
+<!-- <div class="main-explain-area jumbotron">
   <p>This website is powered by GitHub Pages/Jekyll and can be built in <strong>under 5 minutes</strong>. Literally.</p>
   <p>The "Get started!" button below will take you to documentation about the Beautiful Jekyll theme.</p>
   <div class="get-started-wrap">
@@ -13,6 +13,122 @@ bigimg: /img/tesla.png
   </div>
   <p>Designed to look great on both desktops and mobile devices.</p>
   <p>Below are sample blog posts for illustration purposes.</p>
-</div>
+</div> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Individual Project(Teng Tang) </title>
+	<link rel="stylesheet" type="text/css" href="style/project.css" />
+	
+	 <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+   <style>
+		body {
+			font-family: 'Rancho', serif;
+			font-size: 30px;
+		}
+    </style>
+
+	<script src="https://www.gstatic.com/charts/loader.js"></script>
+	<script>
+		google.charts.load('current', {'packages' : ['corechart']});
+		google.charts.setOnLoadCallback(drawSeriesChart);
+		
+		function drawSeriesChart() {
+
+			var data_1 = google.visualization.arrayToDataTable([
+				['Country', 'Education', 'Healthcare',   'Region',     'Population'],
+				['USA',        87.68,      305.08,     'North America',  321049000],
+				['CHN',        26.21,      58.85,      'East Asia',     1371220000],
+				['DEU',    	   19.41,      37.64,      'Europe',          81690000],
+				['JPN',        15.65,      47.90,      'East Asia',      127140000],
+				['GBR',        16.25,      28.50,      'Europe',          65130000],
+				['FRA',        15.58,      16.98,      'Europe',          66590000],
+				['BRA',        14.32,      16.06,      'South America',  205960000],
+				['ITA',        8.49,       16.49,      'Europe',          60730000],
+				['AUS',        8.19,       12.74,      'Oceania',         23850000],
+				['KOR',        7.00,       10.21,      'East Asia',       51010000],
+				['CAN',        6.01,       16.28,      'North America',   35830000]
+			]);
+			
+			var data_2 = google.visualization.arrayToDataTable([
+				['Country', 'Education', 'Healthcare',   'Region',     'Population'],
+				['CHN',        26.21,      58.85,      'East Asia',     1371220000],
+				['DEU',    	   19.41,      37.64,      'Europe',          81690000],
+				['JPN',        15.65,      47.90,      'East Asia',      127140000],
+				['GBR',        16.25,      28.50,      'Europe',          65130000],
+				['FRA',        15.58,      16.98,      'Europe',          66590000],
+				['BRA',        14.32,      16.06,      'South America',  205960000],
+				['ITA',        8.49,       16.49,      'Europe',          60730000],
+				['AUS',        8.19,       12.74,      'Oceania',         23850000],
+				['KOR',        7.00,       10.21,      'East Asia',       51010000],
+				['CAN',        6.01,       16.28,      'North America',   35830000]
+			]);
+
+			var options_1 = {
+				title: "Overview of Top Eleven nations' Educational and Healthcare Expenses in Billion($) for 2015",
+				hAxis: {title: 'Educational Expense'},
+				
+				vAxis: {title: 'Healthcare Expense',ticks: [0,50,100,150,200,250,300,350]},
+				bubble: {textStyle: {fontSize: 11}}
+			};
+			
+			var options_2 = {
+				title: "Overview of Top Ten nations' Educational and Healthcare Expenses in Billion($) for 2015",
+				hAxis: {title: 'Educational Expense'},
+				
+				vAxis: {title: 'Healthcare Expense'},
+				bubble: {textStyle: {fontSize: 11}}
+			};
+
+			var chart = new google.visualization.BubbleChart(document.getElementById('overview1_div'));
+			chart.draw(data_1, options_1);
+			var chart = new google.visualization.BubbleChart(document.getElementById('overview2_div'));
+			chart.draw(data_2, options_2);
+		}
+			
+		
+	</script>
+</head>
+
+<body>
+	<div id= "main">
+		<h1> Teng Tang </h1>
+		<div id="menubar">
+			<ul id="menu">
+				<li class = "selected"><a href="overview.html">Overview</a></li>
+				<li><a href="2015data.html">2015Data</a></li>
+				<li><a href="gdp.html">GDP</a></li>
+				<li><a href="militaryproject.html">Military</a></li>
+				<li><a href="capita.html">Capita</a></li>
+				<li><a href="growthrate.html">Growthrate</a></li>
+			</ul>
+		</div>
+		<div class="sidebar2">Overview(without USA) (2015)</div>
+		<div id="overview2_div" 
+			style="width: 900px; height: 500px;"></div>
+		<br />
+	
+		<div class="sidebar1">Overview (2015)</div>
+		<div id="overview1_div" 
+			style="width: 900px; height: 500px;"></div>
+		<br />
+	
+		
+		
+		<div id="footer">
+		    &copy;
+			<script>
+			var d = new Data();
+			document.write(d.getFullYear());
+			</script>
+				| <a> HTML.5</a>
+				| <a> CSS</a>
+				| <a> Developed by TT</a>
+		</div><!-- footer -->
+	</div>
+</body>
+</html>
 
 
