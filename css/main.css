@@ -19,7 +19,18 @@ nav ul {
 }
 nav ul li {
     display: inline;
-    margin-right: 90px;
+}
+
+ul#menu li a {
+	letter-spacing: 0em;
+	font: normal 100% arial, sans-serif;
+	text-transform: uppercase;
+	display: block;
+	height: 20px;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	border: 0;
 }
 
 * {margin: 0.1px;
