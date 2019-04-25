@@ -53,6 +53,7 @@ ul#menu li a:hover {
 
 #main {
 	background: url(menubar.jpg);
+	width: 1000px;
 }
 
 
@@ -90,9 +91,9 @@ hr.small {
 .main-content {
   padding-top: 80px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
   .main-content {
-    padding-top: 130px;
+    padding-top: 30px;
   }
 }
 
