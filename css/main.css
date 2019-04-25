@@ -9,6 +9,62 @@ body {
   position: relative;
   background: #FFF;
 }
+
+#menubar {
+	width: 1100px;
+	height: 35px;
+	padding: 0 0 0 450px;
+	position: relative;
+	z-index: 1;
+}
+
+ul#menu {
+	
+	margin: 0;
+}
+
+ul#menu li {
+    float: left;
+	margin:5px 0 0 0;
+	padding: 0 0 0 6px;
+	list-style: none;
+}
+
+ul#menu li a {
+	letter-spacing: 0em;
+	font: normal 80% arial, sans-serif;
+	text-transform: uppercase;
+	display: block;
+	height: 20px;
+	text-decoration: none;
+	padding: 9px 22px 5px 16px;
+	text-align: center;
+	color: #fff;
+	border: 0;
+}
+
+ul#menu li.selected a {
+	height: 30px;
+	color: #111;
+	padding: 7px 22px 5px 16px;
+}
+
+ul#menu li.selected {
+	margin: 7px 0 0 0;
+	background: #f8f8f8;
+}
+
+ul#menu li a:hover {
+	color: #888;
+}
+
+#main {
+	
+	padding: 0 0 0 0;
+	width: 1902px;
+	background: url(background.jpg);
+}
+
 p {
   line-height: 1.5;
   margin: 30px 0;
