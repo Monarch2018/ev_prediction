@@ -35,7 +35,6 @@ ul#menu li a {
 	text-align: center;
 	color: #fff;
 	border: 0;
-	margin-top: -80px;
 }
 
 ul#menu li.selected a {
@@ -51,16 +50,16 @@ ul#menu li.selected {
 ul#menu li a:hover {
 	color: #888;
 }
-/* 
+
 #main {
 	background: url(menubar.jpg);
-/* 	width: 850px; */
+	width: 850px;
 	width: 200%;
 	margin-top: -30px;
 	margin-left: -40px;
 	padding: 30px;
 	position: center;
-} */
+}
 
 
 p {
