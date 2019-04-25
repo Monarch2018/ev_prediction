@@ -53,8 +53,8 @@ ul#menu li a:hover {
 
 #main {
 	background: url(menubar.jpg);
-	width: 900px;
-/* 	margin-left: -60px; */
+	width: 800px;
+	margin-left: -80px;
 	position: center;
 }
 
