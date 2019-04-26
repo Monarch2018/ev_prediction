@@ -28,7 +28,7 @@ ul#menu li a {
 	letter-spacing: 0em;
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
-	padding: 15px -20px 15px 15px;
+	padding: 15px 15px 25px 15px;
 	display: block;
 	height: 30px;
 	text-decoration: none;
@@ -42,7 +42,7 @@ ul#menu li a {
 ul#menu li.selected a {
 	height: 10px;
 	color: #111;
-	padding: 15px 15px 5px 15px;
+	padding: 15px 15px 25px 15px;
 }
 
 ul#menu li.selected {
