@@ -68,6 +68,7 @@ ul#menu li a:hover {
 #container {
     margin-left: -60px;
     positon: center;
+    width: 900px;
 }
 
 #blurb {
