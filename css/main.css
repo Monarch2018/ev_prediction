@@ -65,11 +65,11 @@ ul#menu li a:hover {
 /* * {margin: 0.1px;
    padding: 0.1px;} */
 
-/* .container {
-    margin-left: 0px;
-} */
+#container {
+    margin-left: -60px;
+}
 
-.blurb {
+#blurb {
     background-color: #ffffff;
 }
 
