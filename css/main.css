@@ -62,6 +62,17 @@ ul#menu li a:hover {
 	position: center;
 }
 
+* {margin: 0.1px;
+   padding: 0.1px;}
+
+.container {
+    padding-top: 10px;
+    margin: auto;
+}
+
+.blurb {
+    background-color: #ffffff;
+}
 
 p {
   line-height: 1.5;
