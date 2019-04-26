@@ -65,7 +65,7 @@ ul#menu li a:hover {
 /* * {margin: 0.1px;
    padding: 0.1px;} */
 
-.container {
+#container {
     padding-top: 10px;
     margin-left: 20px;
 }
