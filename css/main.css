@@ -28,7 +28,7 @@ ul#menu li a {
 	letter-spacing: 0em;
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
-	padding: 9px 22px 5px 16px;
+	padding: 10px 20px 10px 20px;
 	display: block;
 	height: 30px;
 	text-decoration: none;
@@ -40,7 +40,7 @@ ul#menu li a {
 ul#menu li.selected a {
 	height: 30px;
 	color: #111;
-	padding: 9px 22px 5px 16px;
+	padding: 10px 20px 10px 20px;
 }
 
 ul#menu li.selected {
@@ -53,11 +53,10 @@ ul#menu li a:hover {
 
 #main {
 	background: url(menubar.jpg);
-	width: 950px;
-/* 	width: 100%; */
+	width: 900px;
 	margin-top: -30px;
 	margin-left: -60px;
-	padding: 30px;
+	padding: 20px;
 	position: center;
 }
 
