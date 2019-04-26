@@ -30,9 +30,9 @@ description: Here's the description of my porject
 navbar-links:
   Home: ""
   Resources:
-    - Getting started: "getstarted"
-    - Other sites that use this template: "featured-users"
-    - External link to Beautiful Jekyll Template page: "https://github.com/daattali/beautiful-jekyll#readme"
+    - Pecan Street dataport: "https://dataport.cloud/"
+    - Climate-NOAA dataset: "https://www.pecanstreet.org/dataport/about/"
+    - Other Resourse: "https://www.pecanstreet.org/dataport/"
   Example pages:
     - Example of a Markdown page: "md-example"
     - Example of an HTML page: "html-example"
