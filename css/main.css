@@ -12,9 +12,9 @@ body {
   background-color: #f0f8ff; 
 }
 
-/* img:hover {
-    opacity: 0.6;
-} */
+img:hover {
+    opacity: 0.9;
+}
 
 #menubar {
 	height: 20px;
