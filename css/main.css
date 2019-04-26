@@ -12,6 +12,10 @@ body {
   background-color: #f0f8ff; 
 }
 
+img:hover {
+    opacity: 0.6;
+}
+
 #menubar {
 	height: 20px;
 	position: relative;
