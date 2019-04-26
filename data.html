@@ -2,10 +2,7 @@
 <html>
 <head>
 	<title> Individual Project(Teng Tang) </title>
-	<link rel="stylesheet" type="text/css" href="style/project.css" />
 	
-	<link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
    <style>
 		body {
 			font-family: 'Rancho', serif;
@@ -13,73 +10,7 @@
 		}
     </style>
 
-	<script src="https://www.gstatic.com/charts/loader.js"></script>
-	<script>
-		google.charts.load('current', {'packages' : ['corechart']});
-		google.charts.setOnLoadCallback(drawAllSheets);
-		google.charts.setOnLoadCallback(drawSeriesChart);
-		
-		
-		
-		function drawAllSheets(){
-			drawSheetName('education','SELECT A,B,C,D,E,F',
-						educationResponseHandler);
-			drawSheetName('healthcare','SELECT A,B,C,D,E,F',
-						healthcareResponseHandler);
-			
-		}
-		
-		function drawSheetName(sheetName, query, responseHandler) {
-			var queryString = encodeURIComponent(query);
-			var query = new google.visualization.Query(
-				'https://docs.google.com/spreadsheets/d/14iJc7JeBDCmbTLDSqaKuaH5ewVNVsfvtojeFZlgWnhQ/gviz/tq?sheet=' + sheetName + '&headers=1&tq=' + queryString
-			);
-			query.send(responseHandler);
-		}
-		
-		function checkError(response) {
-			if (response.isError()) {
-				alert('Error in query: ' + response.getDetailedMessage());
-				return;
-			}
-		} //checkError
 	
-		function educationResponseHandler(response){
-			
-			checkError(response);
-			var data = response.getDataTable();
-			data.sort({column: 5, desc: true});
-			
-			var options = {height: 400, 
-							vAxis: {title: ' Total Spending in Billion ($)'},
-							hAxis: {title: 'Country'}
-							};
-			
-			var chart = new google.visualization.ColumnChart(document.getElementById('top_education_spending_div'));
-			
-			chart.draw(data, options);
-	
-		}
-	
-		function healthcareResponseHandler(response){
-			
-			checkError(response);
-			var data = response.getDataTable();
-			data.sort({column: 5, desc: true});
-			
-			var options = {height: 400, 
-							vAxis: {title: 'Total Spending in Billion ($)'},
-							hAxis: {title: 'Country'}
-							};
-			
-			var chart = new google.visualization.ColumnChart(document.getElementById('top_healthcare_spending_div'));
-			
-			chart.draw(data, options);
-		}
-		
-		
-		
-	</script>
 </head>
 
 <body>
@@ -95,29 +26,7 @@
 				<li><a href="prediction.html">Prediction</a></li>
 			</ul>
 		</div>
-	
-		<div class ="sidebar4">Healthcare Spending of top ten nations (2011-2015)</div>
-		<div id="top_healthcare_spending_div" 
-			style="height: 600px; width:900px;"></div>
-		<br />
-	
-		<div class="sidebar3">Educational Spending of top ten nations (2011-2015)</div>
-		<div id = "top_education_spending_div"
-			style= "height: 600px; width:900px;"></div>
-		<br />
-	
-		<div id="footer2">
-		    &copy;
-			<script>
-			var d = new Data();
-			document.write(d.getFullYear());
-			</script>
-				| <a> HTML.5 </a>
-				| <a> CSS </a>
-				| <a> Developed by TT </a>
-		</div><!-- footer -->
-		
-	
+			
 	</div>
 </body>
 </html>
