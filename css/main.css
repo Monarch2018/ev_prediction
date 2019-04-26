@@ -9,7 +9,7 @@ body {
   color: #404040;
   width: 100%;
   position: relative;
-  background: #FFF;
+  background-color: #f0f8ff; 
 }
 
 #menubar {
@@ -67,6 +67,7 @@ ul#menu li a:hover {
 
 #container {
     margin-left: -60px;
+    positon: center;
 }
 
 #blurb {
@@ -88,7 +89,9 @@ h1,h2,h3,h4,h5,h6 {
 a {
   color: #008AFF;
 }
-a:hover,
+a:hover {
+  text-shadow: 0 0 15px #f0ffff;
+}
 a:focus {
   color: #0085a1;
 }
