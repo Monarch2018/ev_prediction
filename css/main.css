@@ -13,7 +13,7 @@ body {
 }
 
 #menubar {
-	height: 30px;
+	height: 20px;
 	position: relative;
 	z-index: 1;
 }
@@ -40,7 +40,7 @@ ul#menu li a {
 }
 
 ul#menu li.selected a {
-	height: 30px;
+	height: 10px;
 	color: #111;
 	padding: 15px 15px 5px 15px;
 }
