@@ -30,7 +30,7 @@ bigimg: /img/pecanstreet.jpg
 [Dataport](https://dataport.cloud/) hosts all the data collected via Pecan Street’s water and electricity research.
 
 ### University Access Database 
-After sign up an account, I successfully got access to the University Access level which is available to current faculty, staff, and students at a four-year postsecondary educational institution in the U.S. or equivalent-level institution in other nations. The tables I have used are listed below:
+After sign up an account, I successfully got access to the University Access level database which is available to current faculty, staff, and students at a four-year postsecondary educational institution in the U.S. or equivalent-level institution in other nations. The tables I have used are listed below:
 #### Metadata (Features: dataid, city, state, car1) 
 ![metadata](/img/metadata.png)
 
