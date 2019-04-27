@@ -21,7 +21,7 @@ bigimg: /img/pecanstreet.jpg
 	
    </div>
 
-## Here is where we can insert an image:
+## Pecan Street Dataport (pgAdmin 4):
 
 ![GW Data Science logo](/img/gwdsp.png)
 
