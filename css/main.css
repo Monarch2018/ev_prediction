@@ -12,9 +12,19 @@ body {
   background-color: #f0f8ff; 
 }
 
-img[src*="#size"] {
-   width:100px;
-   height:100px;
+img[src*="#pgAdmin4"] {
+   width:60px;
+   height:60px;
+}
+
+img[src*="#university"] {
+   width:120px;
+   height:220px;
+}
+
+img[src*="#metadata"] {
+   width:120px;
+   height:30px;
 }
 
 img:hover {
