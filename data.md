@@ -5,7 +5,14 @@ subtitle: Electric Vehicle Present Discovery
 bigimg: /img/pecanstreet.jpg
 ---
 
+<!-- _navbar.md -->
 
+* Getting started
+
+  * [Quick start](quickstart.md)
+  * [Writing more pages](more-pages.md)
+  * [Custom navbar](custom-navbar.md)
+  * [Cover page](cover.md)
   
 ## Here is where we can insert an image:
 
