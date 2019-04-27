@@ -7,7 +7,7 @@ bigimg: /img/testla.png
 
 ## Here is where we can insert an image:
 
-![PP Data Science logo](/img/gwdsp.png)
+![GW Data Science logo](/img/gwdsp.png)
 
 ## How about a link?
 
