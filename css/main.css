@@ -13,18 +13,18 @@ body {
 }
 
 img[src*="#pgAdmin4"] {
-   width:60px;
-   height:60px;
+   width:150px;
+   height:150px;
 }
 
 img[src*="#university"] {
-   width:120px;
-   height:220px;
+   width:260px;
+   height:460px;
 }
 
 img[src*="#metadata"] {
-   width:120px;
-   height:30px;
+   width:260px;
+   height:80px;
 }
 
 img:hover {
