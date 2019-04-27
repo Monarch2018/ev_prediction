@@ -2,7 +2,7 @@
 layout: page
 title: Oracle Data Science Capstone project
 subtitle: Electric Vehicle Present Discovery
-bigimg: /img/testla.png
+bigimg: /img/tesla.png
 ---
 
 ## Here is where we can insert an image:
