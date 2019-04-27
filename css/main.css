@@ -12,7 +12,10 @@ body {
   background-color: #f0f8ff; 
 }
 
-img[alt=pyAdmin4] { width: 150px }
+img[src*="#size"] {
+   width:20px;
+   height:20px;
+}
 
 img:hover {
     opacity: 0.9;
