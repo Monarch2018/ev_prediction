@@ -10,12 +10,12 @@ bigimg: /img/pecanstreet.jpg
    <div id= "main">
 		<div id="menubar">
 			<ul id="menu">
-				<li><a href="index.html">Overview</a></li>
-				<li class = "selected"><a href="data">Data</a></li>
-				<li><a href="preprocessing.html">Preprocessing</a></li>
-				<li><a href="timeseries.html">Time Series</a></li>
-				<li><a href="baseline.html">Baseline</a></li>
-				<li><a href="prediction.html">Prediction</a></li>
+			    <li><a href="https://monarch2018.github.io/ev_prediction/">Overview</a></li>
+			    <li class = "selected"><a href="https://monarch2018.github.io/ev_prediction/data/">Data</a></li>
+			    <li><a href="preprocessing.html">Preprocessing</a></li>
+			    <li><a href="timeseries.html">Time Series</a></li>
+			    <li><a href="baseline.html">Baseline</a></li>
+			    <li><a href="prediction.html">Prediction</a></li>
 			</ul>
 		</div>
 	
