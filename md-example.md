@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Markdown-based page example
-subtitle: Subtitle goes here
-bigimg: /img/start.jpg
+title: Oracle Data Science Capstone project
+subtitle: Electric Vehicle Present Discovery
+bigimg: /img/testla.png
 ---
 
 ## Here is where we can insert an image:
