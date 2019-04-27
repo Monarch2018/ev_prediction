@@ -7,7 +7,7 @@ bigimg: /img/testla.png
 
 ## Here is where we can insert an image:
 
-(/img/gwdsp.png)
+!(/img/gwdsp.png)
 
 ## How about a link?
 
