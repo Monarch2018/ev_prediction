@@ -4,7 +4,11 @@ title: Oracle Data Science Capstone project
 subtitle: Electric Vehicle Present Discovery
 bigimg: /img/pecanstreet.jpg
 ---
-
+<head>
+	<title> Capstone Project(Teng Tang) </title>
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
    <div id= "main">
 		<div id="menubar">
 			<ul id="menu">
@@ -18,7 +22,7 @@ bigimg: /img/pecanstreet.jpg
 		</div>
 	
    </div>
-
+</body>
 ## Here is where we can insert an image:
 
 ![GW Data Science logo](/img/gwdsp.png)
