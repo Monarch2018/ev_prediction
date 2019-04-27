@@ -23,7 +23,7 @@ bigimg: /img/pecanstreet.jpg
 
 ### Pecan Street Dataport (pgAdmin 4):
 
-![GW Data Science logo](/img/pgAdmin4.png =150x150)
+![GW Data Science logo](/img/pgAdmin4.png =150*150)
 
 ### Dataport link
 
