@@ -7,13 +7,9 @@ bigimg: /img/pecanstreet.jpg
 
 <!-- _navbar.md -->
 
-* Getting started
+* [:us:, :uk:](/)
+* [:cn:](/zh-cn/)
 
-  * [Quick start](quickstart.md)
-  * [Writing more pages](more-pages.md)
-  * [Custom navbar](custom-navbar.md)
-  * [Cover page](cover.md)
-  
 ## Here is where we can insert an image:
 
 ![GW Data Science logo](/img/gwdsp.png)
