@@ -23,7 +23,7 @@ bigimg: /img/pecanstreet.jpg
 
 ### Pecan Street Dataport (pgAdmin 4):
 
-![pgAdmin4 png](/img/pgAdmin4.png=100x200)
+<img src="/img/pgAdmin4.png" alt="pgAdmin4" width="200" height= "100"/>
 
 ### Dataport link
 
