@@ -5,13 +5,19 @@ subtitle: Electric Vehicle Present Discovery
 bigimg: /img/pecanstreet.jpg
 ---
 
-This is a regular paragraph.
-
-<table>
-    <tr>
-        <td>Foo</td>
-    </tr>
-</table>
+   <div id= "main">
+		<div id="menubar">
+			<ul id="menu">
+				<li class = "selected"><a href="index.html">Overview</a></li>
+				<li><a href="data">Data</a></li>
+				<li><a href="preprocessing.html">Preprocessing</a></li>
+				<li><a href="timeseries.html">Time Series</a></li>
+				<li><a href="baseline.html">Baseline</a></li>
+				<li><a href="prediction.html">Prediction</a></li>
+			</ul>
+		</div>
+	
+   </div>
 
 ## Here is where we can insert an image:
 
