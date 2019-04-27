@@ -39,6 +39,9 @@ The tables I have used are listed below:
 #### Metadata (Features: dataid, city, state, car1) 
 ![metadata](/img/metadata.png#metadata)
 
+#### Other table (electric_vehicle, electricity_egauge_hours, survey_2017_all_participants, weather) 
+![list](/img/list.png#list)
+
 ### Or some code?
 
 Some code might go here:
