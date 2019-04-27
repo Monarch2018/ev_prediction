@@ -5,10 +5,13 @@ subtitle: Electric Vehicle Present Discovery
 bigimg: /img/pecanstreet.jpg
 ---
 
-<!-- _navbar.md -->
+This is a regular paragraph.
 
-* [:us:, :uk:](/)
-* [:cn:](/zh-cn/)
+<table>
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table>
 
 ## Here is where we can insert an image:
 
