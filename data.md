@@ -27,7 +27,7 @@ bigimg: /img/pecanstreet.jpg
 
 ### Dataport link
 
-Dataport hosts all the data collected via Pecan Street’s water and electricity research. [Dataport](https://dataport.cloud/)
+[Dataport](https://dataport.cloud/) hosts all the data collected via Pecan Street’s water and electricity research.
 
 ### Or some code?
 
