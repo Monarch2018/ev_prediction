@@ -14,8 +14,8 @@ bigimg: /img/pecanstreet.jpg
 			    <li><a href="https://monarch2018.github.io/ev_prediction/data/">Data</a></li>
 			    <li><a href="https://monarch2018.github.io/ev_prediction/preprocessing/">Preprocessing</a></li>
 			    <li class = "selected"><a href="https://monarch2018.github.io/ev_prediction/timeseries/">Time Series</a></li>
-			    <li><a href="baseline.html">Baseline</a></li>
-			    <li><a href="prediction.html">Prediction</a></li>
+			    <li><a href="https://monarch2018.github.io/ev_prediction/baseline/">Baseline</a></li>
+			    <li><a href="https://monarch2018.github.io/ev_prediction/prediction/">Prediction</a></li>
 			</ul>
 		</div>
 	
