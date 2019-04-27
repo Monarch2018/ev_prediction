@@ -18,18 +18,18 @@ img[src*="#pgAdmin4"] {
 }
 
 img[src*="#university"] {
-   width:400px;
-   height:500px;
+   width:420px;
+   height:510px;
 }
 
 img[src*="#metadata"] {
    width:300px;
-   height:80px;
+   height:60px;
 }
 
 img[src*="#list"] {
    width:300px;
-   height:500px;
+   height:700px;
 }
 
 img:hover {
