@@ -23,11 +23,11 @@ bigimg: /img/pecanstreet.jpg
 
 ## Pecan Street Dataport (pgAdmin 4):
 
-![GW Data Science logo](/img/gwdsp.png)
+![pgAdmin4 png](/img/pgAdmin4.png)
 
-## How about a link?
+## Dataport link
 
-And of course some text, and maybe [a link to https://datasci.columbian.gwu.edu/](https://datasci.columbian.gwu.edu/)
+Dataport hosts all the data collected via Pecan Street’s water and electricity research. [a link to https://datasci.columbian.gwu.edu/](https://dataport.cloud/)
 
 ## Or some code?
 
