@@ -21,9 +21,32 @@ bigimg: /img/pecanstreet.jpg
 	
    </div>
 
-### Pecan Street Dataport (pgAdmin 4):
+### Merge Vehicle and nonvehicle dataset (1:1)
 
-![pgAdmin4](/img/pgAdmin4.png#pgAdmin4)
+```
+# Preprocess two raw datasets
+novehicle = pd.read_csv(os.path.join("/content","novehicle.csv"), header = 0, keep_default_na = False)
+vehicle = pd.read_csv(os.path.join("/content","metadata.csv"), header = 0, keep_default_na = False)
+vehicle['label'] = '1'
+novehicle['label'] = '0'
+vehicle = vehicle.dropna(how = 'any', axis = 0)
+novehicle = novehicle.dropna(how = 'any', axis = 0)
+...
+# Merge two datasets
+capstone = vehicle.append(novehicle, ignore_index = True)
+# Export new dataset to google drive and name it 'capstone'
+from google.colab import drive
+drive.mount('drive')
+capstone.to_csv('capstone.csv')
+!cp capstone.csv drive/My\ Drive/
+...
+# Check new dataset
+Capstone = importfile(file_id = '1-1lVd9sPctCOOrpxJ8vpf7qf6zhU3EhN')
+Capstone = pd.read_csv(os.path.join("/content","capstone.csv"), header = 0, keep_default_na = False)
+Capstone.groupby('label').size()
+```
+![university](/img/university.png#university)
+
 
 
 ### Dataport link
