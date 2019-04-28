@@ -43,18 +43,6 @@ The tables I have used are listed below:
 ![list](/img/list.png#list)
 
 
-### Or some code?
+### Insight
 
-Some code might go here:
-
-```
-x <- 5 # Here's some R code
-```
-
-What if I just paste the HTML for a plotly plot?
-
-We can do it with a line of markdown that looks like this (without the slashes - I haven't solved that problem just yet...):
-```
-\{\% include jupyter-basic_bar.html \%\}
-```
-{% include aaa.html %}
+{% include NOAA.html %}
