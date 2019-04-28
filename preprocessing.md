@@ -21,7 +21,7 @@ bigimg: /img/pecanstreet.jpg
 	
    </div>
 
-### Merge Vehicle and nonvehicle dataset (1:1)
+### Merge Vehicle and Nonvehicle Dataset (1:1)
 
 ```
 # Preprocess two raw datasets
@@ -49,9 +49,15 @@ Capstone.groupby('label').size()
 
 
 
-### Dataport link
+### Feature Engineering
+1. Check missing values by using missing_map function
+```
+# see missing values
+missing_map = Capstone.replace(['unknown_0','unknown_1'],np.nan)
+msno.matrix(missing_map)
+```
+![missing](/img/,missing.png#missing)
 
-[Dataport](https://dataport.cloud/) hosts all the data collected via Pecan Street’s water and electricity research.
 
 ### University Access Database 
 After sign up an account, I successfully got access to the University Access level database which is available to current faculty, staff, and students at a four-year postsecondary educational institution in the U.S. or equivalent-level institution in other nations. 
