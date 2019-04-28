@@ -32,6 +32,11 @@ img[src*="#list"] {
    height:730px;
 }
 
+img[src*="#train_test"] {
+   width:410px;
+   height:500px;
+}
+
 img:hover {
     opacity: 0.9;
 }
