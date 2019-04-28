@@ -51,11 +51,13 @@ The tables I have used are listed below:
 {% include NOAA.html %}
 
 #### 3. Baseline: traning and testing dataset
+
 Manually splite 43 families as training set, 23 families as testing set.
-	```
-	train_data=pd.read_csv(os.path.join("/content",'train.csv'), index_col =0)
-	test_data=pd.read_csv(os.path.join("/content",'test.csv'), index_col =0)
-	print(train_data.info(), test_data.info())
-	```
+```
+train_data=pd.read_csv(os.path.join("/content",'train.csv'), index_col =0)
+test_data=pd.read_csv(os.path.join("/content",'test.csv'), index_col =0)
+print(train_data.info(), test_data.info())
+```
+![train_test](/img/train_test.png#train_test)
 	
 
