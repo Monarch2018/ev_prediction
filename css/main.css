@@ -33,8 +33,8 @@ img[src*="#list"] {
 }
 
 img[src*="#train_test"] {
-   width:410px;
-   height:500px;
+   width:500px;
+   height:680px;
 }
 
 img:hover {
