@@ -37,6 +37,11 @@ img[src*="#train_test"] {
    height:700px;
 }
 
+img[src*="#merge"] {
+   width:300px;
+   height:100px;
+}
+
 img:hover {
     opacity: 0.9;
 }
