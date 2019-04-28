@@ -44,6 +44,12 @@ The tables I have used are listed below:
 
 
 ### Insight
+#### 1. Geographic dataset
 {% include Location.html %}
 
+#### 2. Weather dataset
 {% include NOAA.html %}
+
+#### 3. Baseline: traning and testing dataset
+	Manually splite 43 families as training set, 23 families as testing set.
+
