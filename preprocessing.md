@@ -45,7 +45,7 @@ Capstone = importfile(file_id = '1-1lVd9sPctCOOrpxJ8vpf7qf6zhU3EhN')
 Capstone = pd.read_csv(os.path.join("/content","capstone.csv"), header = 0, keep_default_na = False)
 Capstone.groupby('label').size()
 ```
-![university](/img/university.png#university)
+![merge](/img/merge.png#merge)
 
 
 
