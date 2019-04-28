@@ -44,5 +44,6 @@ The tables I have used are listed below:
 
 
 ### Insight
+{% include Location.html %}
 
 {% include NOAA.html %}
