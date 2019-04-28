@@ -56,7 +56,7 @@ Capstone.groupby('label').size()
 missing_map = Capstone.replace(['unknown_0','unknown_1'],np.nan)
 msno.matrix(missing_map)
 ```
-![missing](/img/,missing.png#missing)
+![missing](/img/missing.png#missing)
 
 
 ### University Access Database 
