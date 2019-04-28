@@ -38,8 +38,8 @@ img[src*="#train_test"] {
 }
 
 img[src*="#merge"] {
-   width:600px;
-   height:100px;
+   width:700px;
+   height:150px;
 }
 
 img:hover {
