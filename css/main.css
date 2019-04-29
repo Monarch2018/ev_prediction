@@ -42,6 +42,24 @@ img[src*="#merge"] {
    height:130px;
 }
 
+img[src*="#missing"] {
+   width:900px;
+   height:730px;
+}
+
+img[src*="#timeseries"] {
+   width:700px;
+   height:400px;
+}
+
+img[src*="#weather"] {
+   width:850px;
+   height:400px;
+}
+
+
+
+
 img:hover {
     opacity: 0.9;
 }
