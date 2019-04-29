@@ -14,16 +14,16 @@ body {
 
 img[src*="#log"] {
    width:600px;
-   height:700px;
+   height:800px;
 }
 
 img[src*="#naiv"] {
    width:600px;
-   height:700px;
+   height:800px;
 }
 
 img[src*="#rf1"] {
-   width:600px;
+   width:650px;
    height:700px;
 }
 
@@ -34,12 +34,12 @@ img[src*="#rf2"] {
 
 img[src*="#xg1"] {
    width:600px;
-   height:700px;
+   height:800px;
 }
 
 img[src*="#xg2"] {
    width:600px;
-   height:700px;
+   height:600px;
 }
 
 
