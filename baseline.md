@@ -67,6 +67,7 @@ if __name__ == '__main__':
 ```
 
 **Output:**
+
 ![log](/img/log.png#log)
 
 ### 2. Naive Bayes
@@ -93,6 +94,7 @@ if __name__ == '__main__':
 ```
 
 **Output:**
+
 ![naiv](/img/naiv.png#naiv)
 
 ### 3. SVM
@@ -120,6 +122,7 @@ if __name__ == '__main__':
 ```
 
 **Output:**
+
 ![svm](/img/svm.png#svm)
 
 ### 4. Random Forest Classification
@@ -150,6 +153,7 @@ if __name__ == '__main__':
 ```
 
 **Output:**
+
 ![rf1](/img/rf1.png#rf1)
 ![rf2](/img/rf2.png#rf2)
 
@@ -182,6 +186,7 @@ if __name__ == '__main__':
 ```
 
 **Output:**
+
 ![xg1](/img/xg1.png#xg1)
 ![xg2](/img/xg2.png#xg2)
 
