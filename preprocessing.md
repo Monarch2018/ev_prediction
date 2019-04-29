@@ -99,7 +99,7 @@ plt.show()
 ```
 ![geo](/img/geo.png#geo)
 
-- Create a new feature ssd (human comfort)
+- create a new feature ssd (human comfort)
 
 ```
 def ssd(row):
@@ -110,25 +110,17 @@ weather.head(5)
 ```
 ![ssd](/img/ssd.png#ssd)
 
-
-
-### University Access Database 
-After sign up an account, I successfully got access to the University Access level database which is available to current faculty, staff, and students at a four-year postsecondary educational institution in the U.S. or equivalent-level institution in other nations. 
-![university](/img/university.png#university)
-
-
-### Or some code?
-
-Some code might go here:
+- left join capstone dataset and weather dataset on 'localhour'
 
 ```
-x <- 5 # Here's some R code
+final_ssd = pd.merge(final,
+                 weather_new[['localhour', 'state', 'ssd']],
+                 on=['localhour','state'],
+                 how = 'left')
+final_ssd.ssd = pd.to_numeric(final_ssd.ssd, errors="coerce")
+final_ssd.head()
 ```
 
-What if I just paste the HTML for a plotly plot?
 
-We can do it with a line of markdown that looks like this (without the slashes - I haven't solved that problem just yet...):
-```
-\{\% include jupyter-basic_bar.html \%\}
-```
+
 {% include jupyter-basic_bar.html %}
