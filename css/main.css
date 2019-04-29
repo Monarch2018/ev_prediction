@@ -72,6 +72,11 @@ img[src*="#family"] {
    height:90px;
 }
 
+img[src*="#persistence"] {
+   width:200px;
+   height:200px;
+}
+
 img:hover {
     opacity: 0.9;
 }
