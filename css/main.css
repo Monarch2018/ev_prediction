@@ -67,6 +67,10 @@ img[src*="#timeprocess"] {
    height:900px;
 }
 
+img[src*="#family"] {
+   width:400px;
+   height:100px;
+}
 
 img:hover {
     opacity: 0.9;
