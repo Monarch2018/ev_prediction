@@ -77,6 +77,11 @@ img[src*="#persistence"] {
    height:400px;
 }
 
+img[src*="#describe"] {
+   width:300px;
+   height:300px;
+}
+
 img:hover {
     opacity: 0.9;
 }
