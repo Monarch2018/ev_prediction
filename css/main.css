@@ -12,6 +12,38 @@ body {
   background-color: #f0f8ff; 
 }
 
+img[src*="#log"] {
+   width:500px;
+   height:300px;
+}
+
+img[src*="#naiv"] {
+   width:500px;
+   height:300px;
+}
+
+img[src*="#rf1"] {
+   width:500px;
+   height:300px;
+}
+
+img[src*="#rf2"] {
+   width:500px;
+   height:300px;
+}
+
+img[src*="#xg1"] {
+   width:500px;
+   height:300px;
+}
+
+img[src*="#xg2"] {
+   width:500px;
+   height:300px;
+}
+
+
+
 img[src*="#pgAdmin4"] {
    width:150px;
    height:150px;
