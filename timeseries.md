@@ -202,7 +202,7 @@ pyplot.show()
 
 **Conclusion:** This quick analysis suggests an ARIMA(15,1,2) on the raw data may be a good starting point. The model can be simplified to ARIMA(0,1,2).
 
-After doing ACF and PACF, the RSME reduced from 12.701 to 10.716. 
+After doing ACF and PACF, the RMSE reduced from 12.701 to 10.716. 
 
 #### 6.3 Grid Search ARIMA Hyperparameters
 
