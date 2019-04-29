@@ -118,9 +118,6 @@ final_ssd = pd.merge(final,
                  on=['localhour','state'],
                  how = 'left')
 final_ssd.ssd = pd.to_numeric(final_ssd.ssd, errors="coerce")
-final_ssd.head()
 ```
+Finally I got the timesereis.csv and final_ssd.csv for later building timeseries and baseline model!
 
-
-
-{% include jupyter-basic_bar.html %}
