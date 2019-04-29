@@ -150,7 +150,8 @@ if __name__ == '__main__':
 ```
 
 **Output:**
-![rf](/img/rf.png#rf)
+![rf1](/img/rf1.png#rf1)
+![rf2](/img/rf2.png#rf2)
 
 ### 5. XGBoost Classification
 
