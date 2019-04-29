@@ -119,5 +119,5 @@ final_ssd = pd.merge(final,
                  how = 'left')
 final_ssd.ssd = pd.to_numeric(final_ssd.ssd, errors="coerce")
 ```
-Finally I got the timesereis.csv and final_ssd.csv for later building timeseries and baseline model!
+Finally I got the timesereis.csv and final_ssd.csv for later building timeseries and baseline models!
 
