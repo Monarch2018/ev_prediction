@@ -235,4 +235,5 @@ q_values = range(0, 5)
 warnings.filterwarnings("ignore")
 evaluate_models(series.values, p_values, d_values, q_values)
 ```
+![grid](/img/grid.png#grid)
 
