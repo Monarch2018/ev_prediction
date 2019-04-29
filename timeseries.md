@@ -39,7 +39,6 @@ bigimg: /img/pecanstreet.jpg
 - Box-Cox Transformed Dataset
 7. Model Validation
 - Finalize Model
-- Make Prediction
 - Validate Model
 
 ### 1. Import Library and datset
