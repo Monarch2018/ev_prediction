@@ -236,3 +236,26 @@ evaluate_models(series.values, p_values, d_values, q_values)
 ```
 ![grid](/img/grid.png#grid)
 
+#### 6.4 Box-Cox Transformed Dataset
+
+```
+X = series.values
+transformed, lam = boxcox(X)
+print('Lambda: %f' % lam)
+pyplot.subplots_adjust(left=None, bottom=None, right=None, top=2, wspace=None, hspace=0.25)
+pyplot.figure(1)
+# line plot
+pyplot.subplot(311)
+pyplot.plot(transformed)
+# histogram
+pyplot.subplot(312)
+pyplot.hist(transformed)
+# q-q plot
+pyplot.subplot(313)
+qqplot(transformed, line='r', ax=pyplot.gca()) 
+pyplot.show()      
+```
+
+![cox](/img/cox.png#cox)
+
+
