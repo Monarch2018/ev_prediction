@@ -83,6 +83,49 @@ print("Number %d family's dataid is %d"%(x,ids[x-1]))
 eg:
 ![family](/img/family.png#family)
 
+### 3. Test Harness
+
+- Define a Validation Dataset
+- Deploy a Method for Model Evaluation  
+
+```
+split_point = len(series) - 68
+dataset, validation = series[0:split_point], series[split_point:]
+print('Dataset %d, Validation %d' % (len(dataset), len(validation))) 
+dataset.to_csv('dataset.csv')
+validation.to_csv('validation.csv')
+```
+Dataset 297, Validation 68
+
+### 4. Persistence
+
+```
+# prepare data
+X = series.values
+X = X.astype('float32')
+train_size = int(len(X) * 0.50)
+train, test = X[0:train_size], X[train_size:]
+# walk-forward validation
+history = [x for x in train]
+predictions = list()
+for i in range(len(test)):
+  # predict
+  yhat = history[-1]
+  predictions.append(yhat)
+  # observation
+  obs = test[i]
+  history.append(obs)
+  print('>Predicted=%.3f, Expected=%3.f' % (yhat, obs))
+# report performance
+rmse = sqrt(mean_squared_error(test, predictions)) 
+print('RMSE: %.3f' % rmse)
+```
+...
+![persistence](/img/persistence.png#persistence)
+**Conclusion:** Running the test harness prints the prediction and observation for each iteration of the test dataset. The code ends by printing the RMSE for the model. In this case, the persistence model achieved an RMSE of 12.701. This means that on average, the model was wrong by about 12 electrical usage for each prediction made.
+
+
+
 ### Dataport link
 
 [Dataport](https://dataport.cloud/) hosts all the data collected via Pecan Street’s water and electricity research.
