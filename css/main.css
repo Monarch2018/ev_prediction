@@ -44,17 +44,22 @@ img[src*="#merge"] {
 
 img[src*="#missing"] {
    width:900px;
-   height:730px;
+   height:700px;
 }
 
 img[src*="#timeseries"] {
-   width:700px;
-   height:400px;
+   width:600px;
+   height:300px;
 }
 
 img[src*="#weather"] {
+   width:800px;
+   height:300px;
+}
+
+img[src*="#ssd"] {
    width:850px;
-   height:400px;
+   height:300px;
 }
 
 
