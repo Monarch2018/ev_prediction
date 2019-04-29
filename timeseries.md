@@ -133,15 +133,8 @@ print('RMSE: %.3f' % rmse)
 ```
 print(series.describe())
 ```
-count   365.0000
-mean     22.3331
-std      12.3356
-min       0.5305
-25%      12.7492
-50%      19.6841
-75%      29.8905
-max      67.5307
-Name: use, dtype: float64
+![describe](/img/describe.png#describe)
+
 **Conclusion:** The large spread in this series will likely make highly accurate predictions difficult if it is caused by random fluctuation (e.g. not systematic).
 
 - Area Plot
