@@ -29,13 +29,6 @@ bigimg: /img/pecanstreet.jpg
 4. XGBoost Classification
 5. Comparison and Conclusion
 
-### 1. Logistic Regression
-
-- GridSearchCV to find the best_estimator and best_parameter
-- Print the classification_report
-- Plot confusion_matrix
-- Plot roc_auc_score 
-
 ```
 # Main packages and functions
 from sklearn.metrics import mean_squared_error
@@ -50,35 +43,29 @@ from scipy.stats import boxcox
 timeseries = importfile(file_id = '1bx2sY8TGrJ7DVRoZ_yjXxp3tQgqn4Zix')
 ```
 
+### 1. Logistic Regression
+
+- GridSearchCV to find the best_estimator and best_parameter
+- Print the classification_report
+- Plot confusion_matrix
+- Plot roc_auc_score 
+
 **Output:**
 ![log](/img/log.png#log)
 
+### 2. Naive Bayes
 
-### 2. Deploy function which can analyze and predict among 76 families
-```
-from pandas import read_csv
-df = read_csv('timeseries.csv', index_col=2, header = 0, parse_dates=True, squeeze=True)
-df.drop(['Unnamed: 0'], axis = 1, inplace = True)
+- GridSearchCV to find the best_estimator and best_parameter
+- Print the classification_report
+- Plot confusion_matrix
+- Plot roc_auc_score 
 
-daily_summary = pd.DataFrame()
-series = pd.DataFrame()
-ids = df.dataid.unique().tolist()
+**Output:**
+![naiv](/img/naiv.png#naiv)
 
-for id in ids:
-  daily_summary_id = df[df['dataid'] == id]
-  daily_summary['dataid'] = daily_summary_id.dataid.resample('D').max()
-  daily_summary['use'] = daily_summary_id.use.resample('D').sum()
-  daily_summary['label'] = daily_summary_id.label.resample('D').max()
-  series = series.append(daily_summary)
-series.dropna(inplace = True)
 
-print('There are totally 76 families, please enter which family you want to predict:')
-x = int(input('Enter family number:'))
-series = series[series['dataid'] == ids[x-1]]['use']
-print("Number %d family's dataid is %d"%(x,ids[x-1]))
-```
-eg:
-![family](/img/family.png#family)
+
+
 
 ### 3. Test Harness
 
