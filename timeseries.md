@@ -258,4 +258,47 @@ pyplot.show()
 
 ![cox](/img/cox.png#cox)
 
+```
+for i in range(len(test)):
+  # transform
+  transformed, lam = boxcox(history)
+  if lam < -5:
+    transformed, lam = history, 1
+  # predict
+  model = ARIMA(transformed, order=(1,1,1))
+  model_fit = model.fit(disp=0)
+  yhat = model_fit.forecast()[0]
+```
+The result shows that RMSE is 10.476, again it improves the accuracy!
 
+### 7 Model Validation
+#### 7.1 Finalize Model
+
+```
+# monkey patch around bug in ARIMA class
+def __getnewargs__(self):
+  return ((self.endog),(self.k_lags, self.k_diff, self.k_ma))
+ARIMA.__getnewargs__ = __getnewargs__
+
+# prepare data
+X = series.values
+X = X.astype('float32')
+# transform data
+transformed, lam = boxcox(X)
+# fit model
+model = ARIMA(transformed, order=(1,1,1)) 
+model_fit = model.fit(disp=0)
+# save model
+model_fit.save('model.pkl') 
+numpy.save('model_lambda.npy', [lam])
+```
+
+#### 7.2 Validation Model
+
+```
+# load model
+model_fit = ARIMAResults.load('model.pkl')
+lam = numpy.load('model_lambda.npy')
+```
+
+![best](/img/best.png#best)
