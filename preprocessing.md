@@ -74,7 +74,7 @@ timeseries.head()
 4. import weather dataset and create new feature ssd (by temperature, humidity, wind speed)
 - import weather dataset
 ```
-weather = importfile(file_id = '1V1qT6o65vB0XsSFs2a3GL1u6QCJTn0R9')
+weather = importfile(file_id = '1V1qT6o65vB0XsSFs2a3GL1u6QCJTn0R9') 
 weather = pd.read_csv(os.path.join("/content","weather.csv"), header = 0, keep_default_na = False)
 weather.head()
 ```
@@ -86,14 +86,11 @@ weather = weather[weather['Coordinates'] != (-117.15188500000001, 32.778033)]
 weather['Coordinates'] = weather['Coordinates'].apply(Point)
 gdf = geopandas.GeoDataFrame(weather, geometry='Coordinates')
 world = geopandas.read_file(geopandas.datasets.get_path('naturalearth_lowres'))
-
 # We restrict to North America.
 ax = world[world.continent == 'North America'].plot(
     color='white', edgecolor='black')
-
 # We can now plot our GeoDataFrame.
 gdf.plot(ax=ax, color='red')
-
 plt.show()
 ```
 ![geo](/img/geo.png#geo)
