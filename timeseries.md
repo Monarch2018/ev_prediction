@@ -140,6 +140,9 @@ print(series.describe())
 - Area Plot
 {% include elec.html %}
 
+- Histgram
+{% include hist.html %}
+
 
 
 
