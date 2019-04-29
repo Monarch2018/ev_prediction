@@ -121,32 +121,33 @@ rmse = sqrt(mean_squared_error(test, predictions))
 print('RMSE: %.3f' % rmse)
 ```
 ...
+
 ![persistence](/img/persistence.png#persistence)
+
 **Conclusion:** Running the test harness prints the prediction and observation for each iteration of the test dataset. The code ends by printing the RMSE for the model. In this case, the persistence model achieved an RMSE of 12.701. This means that on average, the model was wrong by about 12 electrical usage for each prediction made.
 
+### 5. Data Analysis
 
-
-### Dataport link
-
-[Dataport](https://dataport.cloud/) hosts all the data collected via Pecan Street’s water and electricity research.
-
-### University Access Database 
-After sign up an account, I successfully got access to the University Access level database which is available to current faculty, staff, and students at a four-year postsecondary educational institution in the U.S. or equivalent-level institution in other nations. 
-![university](/img/university.png#university)
-
-
-### Or some code?
-
-Some code might go here:
+- Summary Statistics
 
 ```
-x <- 5 # Here's some R code
+print(series.describe())
 ```
+count   365.0000
+mean     22.3331
+std      12.3356
+min       0.5305
+25%      12.7492
+50%      19.6841
+75%      29.8905
+max      67.5307
+Name: use, dtype: float64
+**Conclusion:** The large spread in this series will likely make highly accurate predictions difficult if it is caused by random fluctuation (e.g. not systematic).
 
-What if I just paste the HTML for a plotly plot?
+- Area Plot
+{% include elec.html %}
 
-We can do it with a line of markdown that looks like this (without the slashes - I haven't solved that problem just yet...):
-```
-\{\% include jupyter-basic_bar.html \%\}
-```
+
+
+
 {% include jupyter-basic_bar.html %}
