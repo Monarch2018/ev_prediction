@@ -80,6 +80,7 @@ weather = pd.read_csv(os.path.join("/content","weather.csv"), header = 0, keep_d
 weather.head()
 ```
 ![weather](/img/weather.png#weather)
+
 - using geopandas to create a GeoDataFrame with Coordinate column
 
 ```
@@ -96,6 +97,18 @@ gdf.plot(ax=ax, color='red')
 plt.show()
 ```
 ![geo](/img/geo.png#geo)
+
+- Create a new feature ssd (human comfort)
+
+```
+def ssd(row):
+   return float((1.818 * row['temperature']+ 18.18)*(0.88 + 0.002 * row['humidity'])+(row['temperature']- 32) / (45 - row['temperature'])- 3.2 * row['wind_speed'] + 18.2)
+  
+weather['ssd'] = weather.apply (lambda row: ssd(row), axis=1)
+weather.head(5)
+```
+![ssd](/img/ssd.png#ssd)
+
 
 
 ### University Access Database 
