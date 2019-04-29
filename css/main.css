@@ -49,7 +49,7 @@ img[src*="#missing"] {
 
 img[src*="#timeseries"] {
    width:600px;
-   height:300px;
+   height:270px;
 }
 
 img[src*="#weather"] {
@@ -62,7 +62,10 @@ img[src*="#ssd"] {
    height:250px;
 }
 
-
+img[src*="#timeprocess"] {
+   width:400px;
+   height:900px;
+}
 
 
 img:hover {
