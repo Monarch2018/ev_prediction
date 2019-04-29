@@ -48,8 +48,8 @@ img[src*="#missing"] {
 }
 
 img[src*="#timeseries"] {
-   width:600px;
-   height:300px;
+   width:500px;
+   height:200px;
 }
 
 img[src*="#weather"] {
@@ -59,7 +59,7 @@ img[src*="#weather"] {
 
 img[src*="#ssd"] {
    width:850px;
-   height:300px;
+   height:250px;
 }
 
 
