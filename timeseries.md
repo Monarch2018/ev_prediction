@@ -22,8 +22,8 @@ bigimg: /img/pecanstreet.jpg
    </div>
 
 ### Main Process (Deployment)
-1. import libraries and methods 
-2. import timeseries dataset
+1. Import libraries and methods 
+2. Import timeseries dataset
 3. Family choose
 4. Test Harness
 4. Persistence
