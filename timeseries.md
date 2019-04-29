@@ -159,7 +159,7 @@ print(series.describe())
 - Analysis of forecast residual errors to evaluate any bias in the model.
 - Explore improvements to the model using power transforms.
 
-#### 6.1 ManuallyConfigured ARIMA
+#### 6.1 Manually Configured ARIMA
 
 ```
 # create a differenced time series
