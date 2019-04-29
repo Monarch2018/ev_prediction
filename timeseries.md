@@ -143,10 +143,48 @@ print(series.describe())
 - Histgram
 {% include hist.html %}
 
+**Conclusion:** 
+1. The distribution is not Gaussian.
+2. The distribution is left shifted and may be exponential or a double Gaussian.
+
 - Box & Whisker Plot
 {% include box.html %}
 
+**Conclusion:** The observations suggest that the month-to-month fluctuations may not be systematic and hard to model.
 
+### 6. ARIMA Model
+#### I will approach this in four steps:
+- Developing a manually configured ARIMA model.
+- Using a grid search of ARIMA to find an optimized model.
+- Analysis of forecast residual errors to evaluate any bias in the model.
+- Explore improvements to the model using power transforms.
 
+#### 6.1 ManuallyConfigured ARIMA
 
-{% include jupyter-basic_bar.html %}
+```
+# create a differenced time series
+def difference(dataset):
+  diff = list()
+  for i in range(1, len(dataset)):
+    value = dataset[i] - dataset[i - 1]
+    diff.append(value)
+  return Series(diff) 
+X = series.values
+# difference data
+stationary = difference(X)
+stationary.index = series.index[1:]
+# check if stationary
+result = adfuller(stationary) 
+print('ADF Statistic: %f' % result[0]) 
+print('p-value: %f' % result[1]) 
+print('Critical Values:')
+for key, value in result[4].items():
+  print('\t%s: %.3f' % (key, value)) # save
+stationary.to_csv('stationary.csv')
+```
+ADF Statistic: -7.041553
+p-value: 0.000000
+Critical Values:
+	1%: -3.449
+	5%: -2.870
+	10%: -2.571
