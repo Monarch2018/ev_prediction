@@ -82,6 +82,11 @@ img[src*="#describe"] {
    height:300px;
 }
 
+img[src*="#acf"] {
+   width:600px;
+   height:800px;
+}
+
 img:hover {
     opacity: 0.9;
 }
