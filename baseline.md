@@ -119,7 +119,71 @@ if __name__ == '__main__':
     plot_roc_auc(X_test,y_test, y_pred)
 ```
 
-
 **Output:**
 ![svm](/img/svm.png#svm)
 
+### 4. Random Forest Classification
+
+- GridSearchCV to find the best_estimator and best_parameter
+- Print the classification_report
+- Plot confusion_matrix
+- Plot roc_auc_score 
+
+```
+if __name__ == '__main__':
+    train_data=pd.read_csv(os.path.join("/content",'train.csv'), index_col =0)
+    test_data=pd.read_csv(os.path.join("/content",'test.csv'), index_col =0)
+    X_train, X_test, y_train, y_test = get_data(train_data,test_data)
+    # Set the parameters by cross-validation
+    tuned_parameters = [{'n_estimators': [100, 200], 
+    			 'max_depth': [10, 50, 100], 
+			 'min_samples_split': [2, 4], 
+			 'max_features': ['sqrt', 'log2']}]
+    grid_rf = grid_search(tuned_parameters, X_train, y_train)
+    best_estimator = grid_rf.best_estimator_
+    best_estimator.fit(X_train, y_train)
+    y_pred = best_estimator.predict(X_test)
+    report(y_test, y_pred)
+    imp = get_feature_importance(train_data)
+    plot_confusion_matrix(y_test, y_pred,normalize=False)
+    plot_roc_auc(X_test,y_test, y_pred)
+```
+
+**Output:**
+![rf](/img/rf.png#rf)
+
+### 5. XGBoost Classification
+
+- GridSearchCV to find the best_estimator and best_parameter
+- Print the classification_report
+- Plot confusion_matrix
+- Plot roc_auc_score
+
+```
+if __name__ == '__main__':
+    train_data=pd.read_csv('./train.csv', index_col =0)
+    test_data=pd.read_csv('./test.csv', index_col =0)
+    X_train, X_test, y_train, y_test = get_data(train_data,test_data)
+    #model before grid search
+    xgb = model(xgb.XGBClassifier(),X_train, y_train)
+    y_pred = xgb.predict(X_test)
+    report(y_test, y_pred)
+    #grid search
+    param = {'n_estimators': [100, 200, 300],
+            'max_depth': [3, 4, 5], 
+            'min_child_weight': [1, 2, 3],
+            'gamma': [0.1, 0.2, 0.3]}
+    grid_search(grid_search(param,X_train,y_train))
+    #plot
+    plot_important_features(xgb)
+    plot_confusion_matrix(y_test, y_pred,normalize=False)
+    plot_roc_auc(X_test,y_test, y_pred,xgb)
+```
+
+**Output:**
+![xg1](/img/xg1.png#xg1)
+![xg2](/img/xg2.png#xg2)
+
+
+### 6. Comparison and Conclusion
+By looking at the roc_auc_score, it shows that Random Forest and XGBoost classification performs best which are 
