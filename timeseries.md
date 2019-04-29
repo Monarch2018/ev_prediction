@@ -143,6 +143,9 @@ print(series.describe())
 - Histgram
 {% include hist.html %}
 
+- Box & Whisker Plot
+{% include box.html %}
+
 
 
 
