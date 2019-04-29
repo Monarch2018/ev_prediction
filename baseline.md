@@ -50,6 +50,22 @@ timeseries = importfile(file_id = '1bx2sY8TGrJ7DVRoZ_yjXxp3tQgqn4Zix')
 - Plot confusion_matrix
 - Plot roc_auc_score 
 
+```
+if __name__ == '__main__':
+    train_data=pd.read_csv(os.path.join("/content",'train.csv'), index_col =0)
+    test_data=pd.read_csv(os.path.join("/content",'test.csv'), index_col =0)
+    X_train, X_test, y_train, y_test = get_data(train_data,test_data)
+    # Set the parameters by cross-validation
+    tuned_parameters = [{'C': [0.001, 0.01,0.1]}]
+    grid = grid_search(tuned_parameters, X_train, y_train)
+    best_estimator = grid.best_estimator_
+    best_estimator.fit(X_train, y_train)
+    y_pred = best_estimator.predict(X_test)
+    report(y_test, y_pred)
+    plot_confusion_matrix(y_test, y_pred,normalize=False)
+    plot_roc_auc(X_test,y_test, y_pred)
+```
+
 **Output:**
 ![log](/img/log.png#log)
 
@@ -60,24 +76,50 @@ timeseries = importfile(file_id = '1bx2sY8TGrJ7DVRoZ_yjXxp3tQgqn4Zix')
 - Plot confusion_matrix
 - Plot roc_auc_score 
 
+```
+if __name__ == '__main__':
+    train_data=pd.read_csv(os.path.join("/content",'train.csv'), index_col =0)
+    test_data=pd.read_csv(os.path.join("/content",'test.csv'), index_col =0)
+    X_train, X_test, y_train, y_test = get_data(train_data,test_data)
+    # Set the parameters by cross-validation
+    tuned_parameters = [{'alpha': [0.01, 0.1, 1]}]
+    grid_naiv = grid_search(tuned_parameters, X_train, y_train)
+    best_estimator = grid_naiv.best_estimator_
+    best_estimator.fit(X_train, y_train)
+    y_pred = best_estimator.predict(X_test)
+    report(y_test, y_pred)
+    plot_confusion_matrix(y_test, y_pred,normalize=False)
+    plot_roc_auc(X_test,y_test, y_pred)
+```
+
 **Output:**
 ![naiv](/img/naiv.png#naiv)
 
+### 3. SVM
 
-
-
-
-### 3. Test Harness
-
-- Define a Validation Dataset
-- Deploy a Method for Model Evaluation  
+- GridSearchCV to find the best_estimator and best_parameter
+- Print the classification_report
+- Plot confusion_matrix
+- Plot roc_auc_score 
 
 ```
-split_point = len(series) - 68
-dataset, validation = series[0:split_point], series[split_point:]
-print('Dataset %d, Validation %d' % (len(dataset), len(validation))) 
-dataset.to_csv('dataset.csv')
-validation.to_csv('validation.csv')
+if __name__ == '__main__':
+    train_data=pd.read_csv(os.path.join("/content",'train.csv'), index_col =0)
+    test_data=pd.read_csv(os.path.join("/content",'test.csv'), index_col =0)
+    X_train, X_test, y_train, y_test = get_data(train_data,test_data)
+    #Set the parameters by cross-validation
+    tuned_parameters = [{'kernel': ['rbf'], 'gamma': [1e-3, 1e-4],'C': [0.1, 1, 10]},
+                        {'kernel': ['linear'], 'C': [0.1, 1, 10]}]
+    grid_svm = grid_search(tuned_parameters, X_train, y_train)
+    best_estimator = grid_svm.best_estimator_
+    best_estimator.fit(X_train, y_train)
+    y_pred = best_estimator.predict(X_test)
+    report(y_test, y_pred)
+    plot_confusion_matrix(y_test, y_pred,normalize=False)
+    plot_roc_auc(X_test,y_test, y_pred)
 ```
-Dataset 297, Validation 68
+
+
+**Output:**
+![svm](/img/svm.png#svm)
 
