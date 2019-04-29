@@ -182,9 +182,6 @@ for key, value in result[4].items():
   print('\t%s: %.3f' % (key, value)) # save
 stationary.to_csv('stationary.csv')
 ```
-ADF Statistic: -7.041553
-p-value: 0.000000
-Critical Values:
-	1%: -3.449
-	5%: -2.870
-	10%: -2.571
+ADF Statistic: -7.041553    p-value: 0.000000    Critical Values: 1%: -3.449, 5%: -2.870, 10%: -2.571.
+
+	
