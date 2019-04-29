@@ -72,6 +72,7 @@ timeseries.head()
 ![timeseries](/img/timeseries.png#timeseries)
 
 4. import weather dataset and create new feature ssd (by temperature, humidity, wind speed)
+
 - import weather dataset
 
 ```
