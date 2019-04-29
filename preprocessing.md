@@ -58,6 +58,19 @@ msno.matrix(missing_map)
 ```
 ![missing](/img/missing.png#missing)
 
+2. Format localhour from 'object' to 'datetime' dtype
+```
+capstone['localhour'] = pd.to_datetime(capstone['localhour'])
+capstone.localhour
+```
+
+3. Create timeseries dataset
+```
+timeseries = captone[['dataid', 'localhour', 'car1', 'use', 'label']]
+timeseries.head()
+```
+![timeseries](/img/timeseries.png#timeseries)
+
 
 ### University Access Database 
 After sign up an account, I successfully got access to the University Access level database which is available to current faculty, staff, and students at a four-year postsecondary educational institution in the U.S. or equivalent-level institution in other nations. 
