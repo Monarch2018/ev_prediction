@@ -183,5 +183,20 @@ for key, value in result[4].items():
 stationary.to_csv('stationary.csv')
 ```
 Output: ADF Statistic: -7.041553    p-value: 0.000000    Critical Values: 1%: -3.449, 5%: -2.870, 10%: -2.571.
-**Conclusion:** Running the example outputs the result of a statistical significance test of whether the 1-lag differenced series is stationary. The results show that the test statistic value -8.763759 is smaller than the critical value at 5% of -2.872. This suggests that we can reject the null hypothesis with a significance level of less than 5% 
-	
+
+**Conclusion:** Running the example outputs the result of a statistical significance test of whether the 1-lag differenced series is stationary. The results show that the test statistic value -8.763759 is smaller than the critical value at 5% of -2.872. This suggests that we can reject the null hypothesis with a significance level of less than 5%.
+
+#### 6.2 Autocorrelation Function (ACF) and Partial Autocorrelation Function (PACF) plots
+
+```
+pyplot.figure(1)
+pyplot.subplot(211)
+plot_acf(series, lags=50, ax=pyplot.gca())
+pyplot.subplots_adjust(left=None, bottom=None, right=None, top=1.5, wspace=None, hspace=0.25)
+pyplot.figure(1)
+pyplot.subplot(212)
+plot_pacf(series, lags=50, ax=pyplot.gca())
+pyplot.show()
+```
+![acf](/img/acf.png#acf)
+
