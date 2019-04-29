@@ -182,6 +182,6 @@ for key, value in result[4].items():
   print('\t%s: %.3f' % (key, value)) # save
 stationary.to_csv('stationary.csv')
 ```
-ADF Statistic: -7.041553    p-value: 0.000000    Critical Values: 1%: -3.449, 5%: -2.870, 10%: -2.571.
-
+Output: ADF Statistic: -7.041553    p-value: 0.000000    Critical Values: 1%: -3.449, 5%: -2.870, 10%: -2.571.
+**Conclusion:** Running the example outputs the result of a statistical significance test of whether the 1-lag differenced series is stationary. The results show that the test statistic value -8.763759 is smaller than the critical value at 5% of -2.872. This suggests that we can reject the null hypothesis with a significance level of less than 5% 
 	
