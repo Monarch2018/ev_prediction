@@ -1,5 +1,63 @@
-# Beautiful Jekyll source code
+---
+layout: page
+title: Oracle Data Science Capstone project
+subtitle: Electric Vehicle Present Discovery
 
-This is the source code of Beautiful Jekyll that is responsible for generating [the demo website for this theme](http://deanattali.com/beautiful-jekyll).  To learn how to build a similarly awesome looking website in minutes, go to the [main Beautiful Jekyll page](https://github.com/daattali/beautiful-jekyll#readme).
+---
 
-**Important note:** This is the `gh-pages` branch of Beautiful Jekyll. If you want to create a User Page (meaning that your website will be `https://yourusername.github.io`) then you should use the `master` branch. If you want to create a Project Page (your website will be `https://yourusername.github.io/reponame`) then you do need to use a `gh-pages` branch, but I strongly suggest you delete this branch and create it again from the `master` branch. This branch in its current form does not include the latest Beautiful Jekyll code, so I recommend you use the `master` branch as the basis of your website.
+   <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+   <div id= "main">
+		<div id="menubar">
+			<ul id="menu">
+			    <li><a href="https://monarch2018.github.io/ev_prediction/index.html">Overview</a></li>
+			    <li class = "selected"><a href="https://monarch2018.github.io/ev_prediction/data/">Data</a></li>
+			    <li><a href="https://monarch2018.github.io/ev_prediction/preprocessing/">Preprocessing</a></li>
+			    <li><a href="https://monarch2018.github.io/ev_prediction/timeseries/">Time Series</a></li>
+			    <li><a href="https://monarch2018.github.io/ev_prediction/baseline/">Baseline</a></li>
+			    <li><a href="https://monarch2018.github.io/ev_prediction/prediction/">Prediction</a></li>
+			</ul>
+		</div>
+	
+   </div>
+
+### Pecan Street Dataport (pgAdmin 4):
+
+![pgAdmin4](/img/pgAdmin4.png#pgAdmin4)
+
+
+### Dataport link
+
+[Dataport](https://dataport.cloud/) hosts all the data collected via Pecan Street’s water and electricity research.
+
+### University Access Database 
+After sign up an account, I successfully got access to the University Access level database which is available to current faculty, staff, and students at a four-year postsecondary educational institution in the U.S. or equivalent-level institution in other nations. 
+![university](/img/university.png#university)
+
+The tables I have used are listed below:
+
+#### Metadata (Features: dataid, city, state, car1) 
+![metadata](/img/metadata.png#metadata)
+
+#### Other table (electric_vehicle, electricity_egauge_hours, survey_2017_all_participants, weather) 
+![list](/img/list.png#list)
+
+
+### Insight
+#### 1. Geographic dataset
+{% include Location.html %}
+
+#### 2. Weather dataset
+{% include NOAA.html %}
+
+#### 3. Baseline: traning and testing dataset
+
+Manually splite 43 families as training set, 23 families as testing set.
+```
+train_data=pd.read_csv(os.path.join("/content",'train.csv'), index_col =0)
+test_data=pd.read_csv(os.path.join("/content",'test.csv'), index_col =0)
+print(train_data.info(), test_data.info())
+```
+![train_test](/img/train_test.png#train_test)
+	
+
