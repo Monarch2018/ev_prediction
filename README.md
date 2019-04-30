@@ -1,8 +1,8 @@
 ---
-layout: page
+
 title: Oracle Data Science Capstone project
 subtitle: Electric Vehicle Present Discovery
-bigimg: /img/pecanstreet.jpg
+
 ---
 
    <link rel="stylesheet" type="text/css" href="css/main.css" />
