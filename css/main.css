@@ -18,12 +18,12 @@ img[src*="#log"] {
 }
 
 img[src*="#naiv"] {
-   width:600px;
+   width:570px;
    height:800px;
 }
 
 img[src*="#rf1"] {
-   width:650px;
+   width:670px;
    height:800px;
 }
 
@@ -39,7 +39,7 @@ img[src*="#xg1"] {
 
 img[src*="#xg2"] {
    width:570px;
-   height:550px;
+   height:500px;
 }
 
 
