@@ -123,7 +123,7 @@ print('RMSE: %.3f' % rmse)
 
 ![persistence](/img/persistence.png#persistence)
 
-**Conclusion:** Running the test harness prints the prediction and observation for each iteration of the test dataset. The code ends by printing the RMSE for the model. In this case, the persistence model achieved an RMSE of 12.701. This means that on average, the model was wrong by about 12 electrical usage for each prediction made.
+**Conclusion:** Running the Persistence prints the prediction and observation for each iteration of the test dataset. The code ends by printing the RMSE for the model. In this case, the persistence model achieved an RMSE of 12.701. This means that on average, the model was wrong by about 12 electrical usage for each prediction made.
 
 ### 5. Data Analysis
 
