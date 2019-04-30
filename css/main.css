@@ -12,6 +12,11 @@ body {
   background-color: #f0f8ff; 
 }
 
+img[src*="#smart"] {
+   width:700px;
+   height:600px;
+}
+
 img[src*="#log"] {
    width:570px;
    height:800px;
