@@ -2,7 +2,7 @@
 layout: page
 title: Oracle Data Science Capstone project
 subtitle: Electric Vehicle Present Discovery
-bigimg: /img/samrt.png
+bigimg: /img/smart.png
 ---
 
    <link rel="stylesheet" type="text/css" href="css/main.css" />
