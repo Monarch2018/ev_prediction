@@ -27,7 +27,7 @@ bigimg: /img/pecanstreet.jpg
 3. Family choose
 4. Test Harness
 4. Persistence
-5. Data Anlysis
+5. Data Analysis
 - Summary Statistics
 - Line Plot
 - Density Plot
