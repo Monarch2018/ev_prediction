@@ -192,4 +192,4 @@ if __name__ == '__main__':
 
 
 ### 6. Comparison and Conclusion
-By looking at the roc_auc_score, it shows that Random Forest and XGBoost classification performs best which are 
+By looking at the roc_auc_score, it shows that Random Forest and XGBoost classification performs best.
